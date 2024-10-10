@@ -1,7 +1,7 @@
 name: geolocator_ohos
-description: A new Flutter plugin project.
+description: Geolocation plugin for Flutter. This plugin provides the Ohos implementation for the geolocator.
 version: 1.0.0
-homepage:
+homepage: https://gitee.com/openharmony-sig/fluttertpc_geolocator
 
 environment:
   sdk: '>=2.19.6 <4.0.0'
