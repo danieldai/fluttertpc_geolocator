@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <oatconfig>
+        <licensefile></licensefile>
+        <policylist>
+            <policy
+                    desc=""
+                    name="projectPolicy">
+                <policyitem
+                        desc="Developed By OpenValley Digital Co., Ltd."
+                        filefilter="copyrightPolicyFilter"
+                        group="defaultGroup"
+                        name="Hunan OpenValley Digital Industry Development Co., Ltd."
+                        path=".*"
+                        rule="may"
+                        type="copyright"/>
+                <policyitem
+                        desc="Developed By The Flutter Authors. All rights reserved."
+                        filefilter="copyrightPolicyFilter"
+                        group="defaultGroup"
+                        name="The Flutter Authors. All rights reserved"
+                        path=".*"
+                        rule="may"
+                        type="copyright"/>
+                <policyitem type="license" name="BSD-3-Clause" path=".*" filefilter="defaultPolicyFilter" desc="不影响兼容性"/>
+                <policyitem type="license" name="BSD 3-Clause License" path=".*" filefilter="defaultPolicyFilter" desc="不影响兼容性"/>
+                <policyitem type="license" name="BSD-2-Clause" path=".*" filefilter="defaultPolicyFilter" desc="不影响兼容性"/>
+                <policyitem type="license" name="BSD 2-Clause License" path=".*" filefilter="defaultPolicyFilter" desc="不影响兼容性"/>
+                <policyitem type="compatibility" name="BSD-3-Clause" path=".*" desc="不影响兼容性"/>
+                <policyitem type="compatibility" name="BSD-2-Clause" path=".*" desc="不影响兼容性"/>
+                <policyitem type="license" name="BSDStyleLicense" path=".*" filefilter="defaultPolicyFilter" desc="不影响兼容性"/>
+            </policy>
+            <policy name="projectPolicy" desc="">
+                <policyitem type="compatibility" name="GPL-2.0+" path=".*" desc="Process that runs independently, invoked by the X process."/>
+                <policyitem type="compatibility" name="Apache-2.0" path=".*" desc="不影响兼容性"/>
+                <policyitem type="compatibility" name="BSDStyleLicense" path=".*" desc="不影响兼容性" />
+            </policy>
+        </policylist>
+        <filefilterlist>
+            <filefilter name="copyrightPolicyFilter" desc="Filters for compatibility，license header policies">
+                <filteritem type="filename" name="LICENSE" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无版权头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_android/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_apple/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_linux/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_ohos/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_platform_interface/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_web/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_windows/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+
+                <filteritem type="filepath" name="geolocator_ohos/example/.flutter-plugins" desc="编译生成产物"/>
+                <filteritem type="filepath" name="geolocator_ohos/ohos/BuildProfile.ets" desc="编译生成产物"/>
+                <filteritem type="filepath" name="example/.metadata" desc="编译生成产物"/>
+                <filteritem type="filepath" name=".metadata" desc="编译生成产物"/>
+                <filteritem type="filepath" name="*.metadata" desc="编译生成产物"/>
+                <filteritem type="filepath" name="geolocator_ohos/.metadata" desc="编译生成产物"/>
+                <filteritem type="filepath" name="geolocator_ohos/example/.flutter-plugins-dependencies" desc="编译生成产物"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+                <filteritem type="filepath" name="geolocator/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_android/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_apple/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_linux/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_ohos/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_platform_interface/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_web/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name="geolocator_windows/.*" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+
+                <filteritem type="filename" name="*.dart" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filename" name="*.yaml" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filename" name="*.lock" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+                <filteritem type="filepath" name=".metadata" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无版权头，不做侵入式修改"/>
+                <filteritem type="filename" name="LICENSE" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无版权头，不做侵入式修改"/>
+                <filteritem type="filename" name="*.metadata" desc="flutter_blue_plus开源库代码（或原库代码文件），原本就无协议头，不做侵入式修改"/>
+            </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for copyright header policies">
+                <filteritem type="filename" name="*.png|*.ttf|*.otf|*.so" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_android/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_apple/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_linux/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_platform_interface/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_ohos/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_web/.*" desc="desc files"/>
+                <filteritem type="filepath" name="geolocator_windows/.*" desc="desc files"/>
+                <filteritem type="filepath" name="*.OAT.xml" desc="desc files"/>
+                <filteritem type="filepath" name="*.CODE_OF_CONDUCT.md" desc="desc files"/>
+                <filteritem type="filepath" name="*.CONTRIBUTING.md" desc="desc files"/>
+            </filefilter>
+        </filefilterlist>
+        <policylist>
+            <policy name="projectPolicy" desc="">
+            </policy>
+        </policylist>
+        <licensefile>COPYING</licensefile>
+    </oatconfig>
+</configuration>
