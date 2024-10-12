@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/geolocator.svg)](https://pub.dartlang.org/packages/geolocator) ![Build status](https://github.com/Baseflow/flutter-geolocator/workflows/geolocator/badge.svg?branch=master) [![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart) [![codecov](https://codecov.io/gh/Baseflow/flutter-geolocator/branch/master/graph/badge.svg)](https://codecov.io/gh/Baseflow/flutter-geolocator)
 
-A Flutter geolocation plugin which provides easy access to platform specific location services ([FusedLocationProviderClient](https://developers.google.com/Ohos/reference/com/google/Ohos/gms/location/FusedLocationProviderClient) or if not available the [LocationManager](https://developer.Ohos.com/reference/Ohos/location/LocationManager) on Ohos).
+A Flutter geolocation plugin which provides easy access to platform specific location services.
 
 ## Features
 
@@ -277,18 +277,6 @@ import 'package:geolocator_ohos/geolocator_ohos.dart';
 
 double bearing = geolocatorOhos.bearingBetween(52.2165157, 6.9437819, 52.3546274, 4.8285838);
 ```
-
-### Location accuracy
-
-#### Ohos
-On Ohos, the `LocationAccuracy` enum controls the accuracy of the location data the app wants to receive. It also provides control over the [priority given to the location stream](https://developers.google.com/Ohos/reference/com/google/Ohos/gms/location/Priority). This can be confusing, as a priority of **lowest** might not return any location, while one might expect it to give the quickest responses. The table below outlines the priority and its meaning per accuracy option:
-
-| Location accuracy | Ohos priority | Description |
-|-------------------|------------------|-------------|
-| **lowest**        | [PRIORITY_PASSIVE](https://developers.google.com/Ohos/reference/com/google/Ohos/gms/location/Priority#public-static-final-int-priority_passive) | Ensures that no extra power will be used to derive locations. This enforces that the request will act as a passive listener that will only receive "free" locations calculated on behalf of other clients, and no locations will be calculated on behalf of only this request. |
-| **low**           | [PRIORITY_LOW_POWER](https://developers.google.com/Ohos/reference/com/google/Ohos/gms/location/Priority#public-static-final-int-priority_low_power) | Requests a tradeoff that favors low power usage at the possible expense of location accuracy. |
-| **medium**        | [PRIORITY_BALANCED_POWER_ACCURACY](https://developers.google.com/Ohos/reference/com/google/Ohos/gms/location/Priority#public-static-final-int-priority_balanced_power_accuracy) | Requests a tradeoff that is balanced between location accuracy and power usage. |
-| **high**+         | [PRIORITY_HIGH_ACCURACY](https://developers.google.com/Ohos/reference/com/google/Ohos/gms/location/Priority#public-static-final-int-priority_high_accuracy) | Requests a tradeoff that favors highly accurate locations at the possible expense of additional power usage. |
 
 ## Issues
 
