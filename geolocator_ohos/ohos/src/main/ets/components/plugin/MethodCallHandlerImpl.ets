@@ -25,7 +25,6 @@ export default class MethodCallHandlerImpl implements MethodCallHandler {
   private channel: MethodChannel | null = null;
 
   constructor() {
-
   }
 
   startListening(binding: FlutterPluginBinding): void {
@@ -183,10 +182,6 @@ export default class MethodCallHandlerImpl implements MethodCallHandler {
           'scenario': geoLocationManager.LocationRequestScenario.UNSET,
           'maxAccuracy': maxAccuracy,
           'timeoutMs': timeoutMs
-          // 'priority': 0x203,
-          // 'scenario': 0x300,
-          // 'maxAccuracy': 0,
-          // 'timeoutMs': 2000
         };
         try {
           let locationChange = (err: BusinessError, location: geoLocationManager.Location): void => {
@@ -203,12 +198,12 @@ export default class MethodCallHandlerImpl implements MethodCallHandler {
           };
           geoLocationManager.getCurrentLocation(requestInfo, locationChange)
         } catch (err) {
-          // let error: BusinessError = err as BusinessError;
-          // result.error(error.code + '', error.message, null);
+          let error: BusinessError = err as BusinessError;
+          console.debug(">>>>>>>getCurrentLocationData,locationChanger: err=" + JSON.stringify(error));
         }
       } catch (err) {
-        // let error: BusinessError = err as BusinessError;
-        // result.error(error.code + '', error.message, null);
+        let error: BusinessError = err as BusinessError;
+        console.debug(">>>>>>>getCurrentLocationData,locationChanger: err=" + JSON.stringify(error));
       }
 
     } catch (err) {
