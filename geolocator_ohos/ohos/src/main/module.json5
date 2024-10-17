@@ -1,0 +1,22 @@
+{
+  "module": {
+    "name": "geolocator_ohos",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+//    "requestPermissions": [
+//      {
+//        "name": "ohos.permission.LOCATION",
+//        "reason": "$string "
+//      },
+//      {
+//        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+//      },
+//      {
+//        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+//      }
+//    ]
+  }
+}
