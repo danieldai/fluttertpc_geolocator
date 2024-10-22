@@ -3,7 +3,7 @@ import 'dart:io' show Platform;
 
 import 'package:baseflow_plugin_template/baseflow_plugin_template.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/flutter_geolocator_ohos.dart';
 import 'package:geolocator_platform_interface/geolocator_platform_interface.dart';
 
 /// Defines the main theme color.

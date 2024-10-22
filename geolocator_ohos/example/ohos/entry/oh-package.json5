@@ -6,6 +6,6 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "geolocator_ohos": "file:../har/geolocator_ohos.har"
+    "flutter_geolocator_ohos": "file:../har/flutter_geolocator_ohos.har"
   }
 }

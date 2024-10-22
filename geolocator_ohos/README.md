@@ -40,7 +40,7 @@ On Ohos you'll need to add either the `LOCATION_IN_BACKGROUND` or the `APPROXIMA
 <details>
 <summary>Windows</summary>
 
-To use the Geolocator plugin on Windows you need to be using Flutter 2.10 or higher. Flutter will automatically add the endorsed [geolocator_windows]() package to your application when you add the `geolocator_ohos: ^1.0.0` dependency to your `pubspec.yaml`.
+To use the Geolocator plugin on Windows you need to be using Flutter 2.10 or higher. Flutter will automatically add the endorsed [geolocator_windows]() package to your application when you add the `flutter_geolocator_ohos: ^1.0.0` dependency to your `pubspec.yaml`.
 
 </details>
 
@@ -49,7 +49,7 @@ To use the Geolocator plugin on Windows you need to be using Flutter 2.10 or hig
 The code below shows an example on how to acquire the current position of the device, including checking if the location services are enabled and checking / requesting permission to access the position of the device:
 
 ```dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/flutter_geolocator_ohos.dart';
 
 /// Determine the current position of the device.
 ///
@@ -105,7 +105,7 @@ To query the current location of the device simply make a call to the `getCurren
 - `timeLimit`: the maximum amount of time allowed to acquire the current location. When the time limit is passed a `TimeOutException` will be thrown and the call will be cancelled. By default no limit is configured.
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 Position position = await geolocatorOhos.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
 ```
@@ -115,7 +115,7 @@ Position position = await geolocatorOhos.getCurrentPosition(desiredAccuracy: Loc
 To query the last known location retrieved stored on the device you can use the `getLastKnownPosition` method (note that this can result in a `null` value when no location details are available):
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 Position? position = await geolocatorOhos.getLastKnownPosition();
 ```
@@ -129,7 +129,7 @@ To listen for location changes you can call the `getPositionStream` to receive s
 - `timeLimit`: the maximum amount of time allowed between location updates. When the time limit is passed a `TimeOutException` will be thrown and the stream will be cancelled. By default no limit is configured.
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 final LocationSettings locationSettings = LocationSettings(
   accuracy: LocationAccuracy.high,
@@ -146,7 +146,7 @@ In certain situation it is necessary to specify some platform specific settings.
 ```dart
 import 'package:geolocator/geolocator.dart';
 import 'package:geolocator_apple/geolocator_apple.dart';
-import 'package:geolocator_Ohos/geolocator_Ohos.dart';
+import 'package:flutter_geolocator_ohos/flutter_geolocator_ohos.dart';
 
 late OhosSettings ohosSettings;
 
@@ -176,7 +176,7 @@ StreamSubscription<Position> positionStream = geolocatorOhos.getPositionStream(l
 To query if a user enabled Approximate location fetching or Precise location fetching, you can call the `Geolocator().getLocationAccuracy()` method.
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 var accuracy = await Geolocator.getLocationAccuracy();
 ```
@@ -186,7 +186,7 @@ var accuracy = await Geolocator.getLocationAccuracy();
 To check if location services are enabled you can call the `isLocationServiceEnabled` method:
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 bool isLocationServiceEnabled  = await geolocatorOhos.isLocationServiceEnabled();
 ```
@@ -194,7 +194,7 @@ bool isLocationServiceEnabled  = await geolocatorOhos.isLocationServiceEnabled()
 To listen for service status changes you can call the `getServiceStatusStream`. This will return a `Stream<ServiceStatus>` which can be listened to, to receive location service status updates.
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 StreamSubscription<ServiceStatus> serviceStatusStream = geolocatorOhos.getServiceStatusStream().listen(
     (ServiceStatus status) {
@@ -209,7 +209,7 @@ When using the web platform, the `checkPermission` method will return the `Locat
 If you want to check if the user already granted permissions to acquire the device's location you can make a call to the `checkPermission` method:
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 LocationPermission permission = await geolocatorOhos.checkPermission();
 ```
@@ -217,7 +217,7 @@ LocationPermission permission = await geolocatorOhos.checkPermission();
 If you want to request permission to access the device's location you can call the `requestPermission` method:
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 LocationPermission permission = await geolocatorOhos.requestPermission();
 ```
@@ -240,7 +240,7 @@ In some cases it is necessary to ask the user and update their device settings. 
 On Ohos the `openAppSettings` method will redirect the user to the App specific settings where the user can update necessary permissions. The `openLocationSettings` method will redirect the user to the location settings where the user can enable/ disable the location services.
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 await geolocatorOhos.openAppSettings();
 await geolocatorOhos.openLocationSettings();
@@ -258,7 +258,7 @@ endLatitude | double | Latitude of the destination position
 endLongitude | double | Longitude of the destination position
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 double distanceInMeters = geolocatorOhos.distanceBetween(52.2165157, 6.9437819, 52.3546274, 4.8285838);
 ```
@@ -273,7 +273,7 @@ endLatitude | double | Latitude of the destination position
 endLongitude | double | Longitude of the destination position
 
 ``` dart
-import 'package:geolocator_ohos/geolocator_ohos.dart';
+import 'package:flutter_geolocator_ohos/geolocator_ohos.dart';
 
 double bearing = geolocatorOhos.bearingBetween(52.2165157, 6.9437819, 52.3546274, 4.8285838);
 ```
