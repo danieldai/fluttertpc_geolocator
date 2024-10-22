@@ -18,7 +18,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  geolocator_ohos:
+  flutter_geolocator_ohos:
     # When depending on this package from a real application you should use:
     #   geolocator_ohos: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

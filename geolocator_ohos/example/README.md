@@ -1,6 +1,6 @@
 # geolocator_ohos_example
 
-Demonstrates how to use the geolocator_ohos plugin.
+Demonstrates how to use the flutter_geolocator_ohos plugin.
 
 ## Getting Started
 

@@ -1,5 +1,5 @@
 import { FlutterEngine, Log } from '@ohos/flutter_ohos';
-import GeolocatorOhosPlugin from 'geolocator_ohos';
+import GeolocatorOhosPlugin from 'flutter_geolocator_ohos';
 
 /**
  * Generated file. Do not edit.

@@ -14,7 +14,7 @@
   },
   "overrides": {
     "@ohos/flutter_ohos": "file:./har/flutter.har",
-    "geolocator_ohos": "file:../har/geolocator_ohos.har",
-    "@ohos/flutter_module": "file:./entry"
+    "@ohos/flutter_module": "file:./entry",
+    "flutter_geolocator_ohos": "file:./har/flutter_geolocator_ohos.har"
   }
 }
