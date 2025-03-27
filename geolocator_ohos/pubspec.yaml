@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  geolocator_platform_interface: ^4.1.0
+  geolocator_platform_interface:
+    path: ../geolocator_platform_interface
   uuid: ^3.0.7
 
 dev_dependencies:
