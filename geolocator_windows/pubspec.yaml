@@ -18,7 +18,10 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  geolocator_platform_interface: ^4.1.0
+  geolocator_platform_interface:
+    git:
+      url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
+      path: "geolocator_platform_interface"
   
 dev_dependencies:
   flutter_test:
