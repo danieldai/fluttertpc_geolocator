@@ -5,7 +5,7 @@
 
 
 
-本项目基于 [flutter_geolocator_ohos](https://pub.dev/packages/flutter_geolocator_ohos) 开发。
+本项目基于 [flutter_geolocator_ohos@1.0.0](https://pub.dev/packages/flutter_geolocator_ohos/versions/1.0.0) 开发。
 
 ## 1. 安装与使用
 
@@ -23,10 +23,12 @@ dependencies:
     git:
       url: https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git
       path: "geolocator"
+      ref: br_v14.0.1_ohos
   flutter_geolocator_ohos:
     git:
       url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
       path: "geolocator_ohos"
+      ref: br_v14.0.1_ohos
 ```
 
 执行命令
@@ -39,7 +41,7 @@ flutter pub get
 
 ### 1.2 使用案例
 
-使用案例详见 [ohos/example](./geolocator_ohos/example/)
+使用案例详见 [geolocator_ohos/example](./geolocator_ohos/example/)
 
 ## 2. 约束与限制
 
@@ -214,4 +216,4 @@ flutter pub get
 
 ## 6. 开源协议
 
-本项目基于 [MIT开源协议](https://gitcode.com/openharmony-sig/fluttertpc_geolocator/blob/master/LICENSE) ，请自由地享受和参与开源。
+本项目基于 [MIT开源协议](https://gitcode.com/openharmony-sig/fluttertpc_geolocator/blob/br_v14.0.1_ohos/LICENSE) ，请自由地享受和参与开源。
