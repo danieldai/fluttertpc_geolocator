@@ -5,7 +5,7 @@
 
 
 
-This project is based on [flutter_geolocator_ohos@10.1.0](https://pub.dev/packages/flutter_geolocator_ohos/versions/10.1.0).
+This project is based on [flutter_geolocator_ohos@1.0.0](https://pub.dev/packages/flutter_geolocator_ohos/versions/1.0.0).
 
 ## 1. Installation and Usage
 
@@ -23,10 +23,12 @@ dependencies:
     git:
       url: https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git
       path: "geolocator"
+      ref: br_v14.0.1_ohos
   flutter_geolocator_ohos:
     git:
       url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
       path: "geolocator_ohos"
+      ref: br_v14.0.1_ohos
 ```
 
 Execute Command
@@ -39,7 +41,7 @@ flutter pub get
 
 ### 1.2 Usage
 
-For use cases [ohos/example](./geolocator_ohos/example/)
+For use cases [geolocator_ohos/example](./geolocator_ohos/example/)
 
 ## 2. Constraints
 
@@ -217,4 +219,4 @@ not
 
 ## 7. License
 
-This project is licensed under  [MIT License](https://gitcode.com/openharmony-sig/fluttertpc_geolocator/blob/master/LICENSE) .
+This project is licensed under  [MIT License](https://gitcode.com/openharmony-sig/fluttertpc_geolocator/blob/br_v14.0.1_ohos/LICENSE) .
