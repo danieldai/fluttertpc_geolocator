@@ -22,7 +22,7 @@ flutter:
       windows:
         default_package: geolocator_windows
       ohos:
-        default_package: geolocator_ohos
+        default_package: flutter_geolocator_ohos
         
 dependencies:
   flutter:
@@ -48,7 +48,7 @@ dependencies:
     git:
       url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
       path: "geolocator_windows"
-  geolocator_ohos:
+  flutter_geolocator_ohos:
     git:
       url: "https://github.com/danieldai/fluttertpc_geolocator.git"
       path: "geolocator_ohos"
