@@ -50,7 +50,7 @@ dependencies:
       path: "geolocator_windows"
   geolocator_ohos:
     git:
-      url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
+      url: "https://github.com/danieldai/fluttertpc_geolocator.git"
       path: "geolocator_ohos"
 
 dev_dependencies:
