@@ -21,7 +21,9 @@ flutter:
         default_package: geolocator_web
       windows:
         default_package: geolocator_windows
-
+      ohos:
+        default_package: geolocator_ohos
+        
 dependencies:
   flutter:
     sdk: flutter
