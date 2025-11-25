@@ -24,7 +24,7 @@ flutter:
       linux:
         default_package: geolocator_linux
       ohos:
-        default_package: geolocator_ohos
+        default_package: flutter_geolocator_ohos
 
 dependencies:
   flutter:
@@ -54,7 +54,7 @@ dependencies:
     git:
       url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
       path: "geolocator_linux"
-  geolocator_ohos:
+  flutter_geolocator_ohos:
     git:
       url: "https://gitcode.com/openharmony-sig/fluttertpc_geolocator.git"
       path: "geolocator_ohos"
